@@ -1,0 +1,19 @@
+doctype html
+html lang="en"
+  head
+    include src/content/partials/shared/_head.slim
+
+  body.bg-white
+
+    .d-flex.flex-column style="min-height: 100vh;"
+
+      include src/content/partials/shared/_header.slim
+
+      main.flex-grow-1#content role="main"
+        .bg-white
+          include src/content/partials/index/_vp.slim
+        .bg-black
+          include src/content/partials/index/_contact_data.slim
+
+      .bg-white
+        include src/content/partials/shared/_footer.slim

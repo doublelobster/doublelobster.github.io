@@ -25,6 +25,10 @@ npm install
 
 You should now be able to use Gulp. Have a look at `gulpfile.js` to see what's available. The most interesting tasks are `compile`, `serve` (with livereload), and `deploy`.
 
+```
+node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js
+```
+
 ## Deploy
 
 Since this is hosted on Github Pages with an Org repository, the branch containing the compiled assets needs to be `master`, so the protected source branch is `main`.

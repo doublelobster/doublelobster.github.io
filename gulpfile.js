@@ -1,6 +1,6 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
+var sass        = require('gulp-dart-sass');
 var slim        = require('gulp-slim');
 var del         = require('del');
 var ghPages     = require('gulp-gh-pages');

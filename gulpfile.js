@@ -81,7 +81,7 @@ gulp.task('deploy', gulp.series(['compile', function() {
   return gulp
     .src(dst.path + '**/*')
     .pipe(ghPages({
-      'branch': 'ghpages',
+      'branch': 'master',
       'force':  true,
     }));
   }])

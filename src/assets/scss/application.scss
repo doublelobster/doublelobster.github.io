@@ -4,4 +4,22 @@
 @import 'application/_navbar.scss';
 @import 'application/_app_types.scss';
 @import 'application/_lists.scss';
+@import 'application/_cards.scss';
+@import 'application/_spacing.scss';
 //@import 'application/_debug.scss';
+
+.ff-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.text-gray {
+  color: #77838f;
+}
+
+.navbar-brand {
+  font-family: Source Sans Pro;
+}
+
+a {
+  text-decoration: none !important;
+}

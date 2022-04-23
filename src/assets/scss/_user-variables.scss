@@ -1,26 +1,26 @@
 // user-variables.scss
 
-$font-family-sans-serif:                                    "Source Sans Pro", sans-serif;
-$font-family-monospace:                                     "Source Code Pro", monospace;
+$font-family-sans-serif:                                    "IBM Plex Sans", sans-serif;
+$font-family-monospace:                                     "Roboto Mono", monospace;
 
 $black:                                                     #000;
 $gray-100:                                                  #f8f9fa;
 
-$body-bg:                                                   $white;
+$body-bg:                                                   #fff;
 
-$primary:                                                   $black;
-$primary-darker:                                            $gray-900;
-$primary-lighter:                                           $gray-700;
-
-$theme-colors: map-merge((
-  "black":                                                  $black,
-), $theme-colors);
-
-$header-nav-link-color:                                     $gray-700;
-$header-nav-link-hover-color:                               $warning;
-
-$link-hover-color:                                          $warning;
+$primary:                                                   #000;
+//$primary-darker:                                            $gray-900;
+//$primary-lighter:                                           $gray-700;
+//$link-hover-color:                                          $warning;
 
 $container-max-widths: (
-  lg: 960px,
+  lg:  960px,
+  xl:  960px,
+  xxl: 960px,
 );
+
+$font-weight-lighter:         200;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            500;
+$font-weight-bolder:          700;

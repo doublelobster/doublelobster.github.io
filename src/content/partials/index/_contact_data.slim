@@ -1,26 +1,35 @@
-.space-2
-  .container.px-5.px-lg-15px
-    .row.text-white
-      .col-md-4
-        h2.lead style="color: #77838f;"
-          | Find us in Paris 🇫🇷
-        p.lead.text-white.font-weight-semi-bold
-          | Station F
-          br
-          | 5 Parvis Alan Turing
-          br
-          | Paris, 75013, France
-      .col-md-4.mt-5.mt-md-0
-        h2.lead  style="color: #77838f;"
-          | Find us in Santa Monica 🇺🇸
-        p.lead.text-white.font-weight-semi-bold
-          | WeWork
-          br
-          | 312 Arizona Ave
-          br
-          | Santa Monica, 90401, California
-      .col-md-4.mt-5.mt-md-0
-        h2.lead  style="color: #77838f;"
-          | Need to get in touch? 📨
-        p.lead.text-white.font-weight-semi-bold
-          | contact@doublelobster.com
+ruby:
+
+  list = [
+    {
+      header: 'Find us in Paris 🇫🇷',
+      lines:  [
+        'Station F',
+        '5 Parvis Alan Turing',
+        'Paris, 75013, France',
+      ],
+    },
+    {
+      header: 'Find us in Santa Monica 🇺🇸',
+      lines:  [
+        'Wework',
+        '312 Arizona Ave',
+        'Santa Monica, 90401, California',
+      ],
+    },
+    {
+      header: 'Need to get in touch? 📨',
+      lines:  [
+        'contact@doublelobster.com',
+      ],
+    },
+  ]
+
+.container.sp-1.text-white
+  .row
+    - list.each do |el|
+      .col-md-4.mb-3
+        .lead.text-gray.mb-2.fw-normal.ff-title style='letter-spacing: 0.5px;'
+          = el[:header]
+        .lead.text-white.fw-bold
+          == el[:lines].join("<br>")

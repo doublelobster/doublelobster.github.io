@@ -35,7 +35,7 @@ Since this is hosted on Github Pages with an Org repository, the branch containi
 
 To compile and deploy on `master`, run:
 ```
-gulp deploy
+node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js deploy
 ```
 
 ## License
